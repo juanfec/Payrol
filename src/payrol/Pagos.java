@@ -15,6 +15,7 @@ import java.util.ArrayList;
  */
 public class Pagos
 {
+    private static Pagos instaciaUnica=null;
     // instance variables - replace the example below with your own
     private ArrayList<Empleados> empleados;
     private int propinaDiaria;
@@ -28,6 +29,15 @@ public class Pagos
         // initialise instance variables
         empleados = new ArrayList<>();
         propinaDiaria=0;
+    }
+    
+    public static Pagos getInstancia()
+    {
+        if(instaciaUnica== null)
+        {
+            instaciaUnica = new Pagos();
+        }
+        return instaciaUnica;
     }
 
     /**
@@ -81,12 +91,6 @@ public class Pagos
         return propinaPorTrabajador;
     }
     
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
     public void agregaEmpleado(Empleados empleado)
     {
         // put your code here

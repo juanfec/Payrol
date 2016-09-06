@@ -5,6 +5,8 @@
  */
 package payrol;
 
+import java.io.IOException;
+
 
 /**
  * Write a description of class Prueba here.
@@ -20,7 +22,7 @@ public class Prueba
     /**
      * Constructor for objects of class Prueba
      */
-    public static void main(String[] args)     {
+    public static void main(String[] args) throws IOException     {
         Empleados empleado1 = new Empleados("Juan Rueda       ",  1098748251, "08/01/1994", "D5SADT8", "nuevo");
         Empleados empleado2 = new Empleados("Cesar Vasquez    ",  1098356747, "22/06/1991", "U5SRWT8", "antiguo");
         Empleados empleado3 = new Empleados("Andres Martinez  ",  1091568943, "02/06/1991", "U5SRWT8", "antiguo");

@@ -82,5 +82,13 @@ public class Empleados
     {
         this.cantidadPago = this.cantidadPago+cantidadPago;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getId() {
+        return id;
+    }
     
 }
