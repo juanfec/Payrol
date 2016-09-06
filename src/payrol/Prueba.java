@@ -86,7 +86,7 @@ public class Prueba
         empleado30.setHorasTrabajadas(9);
         
         
-        Pagos pagos1 = new Pagos();
+        Pagos pagos1 = Pagos.getInstancia();
         pagos1.agregaEmpleado(empleado1);
         pagos1.agregaEmpleado(empleado2);
         pagos1.agregaEmpleado(empleado3);
@@ -119,7 +119,7 @@ public class Prueba
         pagos1.agregaEmpleado(empleado30);
       
         pagos1.ingresaPropina(500);
-        Documento document1 = new Documento(pagos1);
+        Documento document1 = new Documento();
         document1.generarDocumento();
         System.out.println("Nota: el valor del pago ya incluye el valor de la propina correspondiente a cada empleado");
     }

@@ -28,15 +28,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Documento
 {
     // instance variables - replace the example below with your own
-    private Pagos pago;
+    public Pagos pago;
 
     /**
      * Constructor for objects of class Documento
      */
-    public Documento(Pagos pago)
+    public Documento()
     {
         // initialise instance variables
-        this.pago = pago;
+        pago=Pagos.getInstancia() ;
     }
     
     public void generarDocumento() throws IOException
