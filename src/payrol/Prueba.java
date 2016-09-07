@@ -6,6 +6,7 @@
 package payrol;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 
 /**
@@ -18,7 +19,10 @@ public class Prueba
 {
     // instance variables - replace the example below with your own
     
-
+    Conexion conex = new Conexion();
+    Connection co = conex.conexion();
+    
+    
     /**
      * Constructor for objects of class Prueba
      */
